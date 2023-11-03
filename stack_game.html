@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tower Stack</title>
+    <meta name="viewport" content="width=device-width,user-scalable=no" />
+    <link rel="stylesheet" href="./stack_game.css" />
+    <style>
+            
+
+        #info {
+            position: absolute;
+            bottom: 1%;
+            left: 45%;
+            transform: translate(-50%, -50%);
+            color: black;
+            font-size: 16pt;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="game"></div>
+      <div id="score">0</div>
+      <div id="instructions">
+        클릭하거나 스페이스바를 눌러주세요!
+      </div>
+      <div id="info"><p >Stack Copyright (c) ParkJinSoo All rights reserved.</p></div>
+      <div class="game-over">
+        <h2>게임오버!</h2>
+        <p>아쉽지만 다음기회를 노려보세요.</p>
+        <p>클릭하거나 스페이스바를 눌러 다시 도전해보세요!</p>
+      </div>
+      <div class="game-ready">
+        <div id="start-button">Start</div>
+        <div></div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="./stack_game.js"></script>
+  </body>
+</html>
