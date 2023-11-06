@@ -296,3 +296,8 @@ class Game {
     }
 }
 let game = new Game();
+document.addEventListener('keydown', function(event) {
+    if (event.keyCode === 8) {
+      window.location.href = "./index.html"; // 이동할 페이지의 경로를 지정합니다.
+    }
+  });

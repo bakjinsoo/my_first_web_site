@@ -4,7 +4,11 @@
         <meta charset="utf-8" />
         <title>2048</title>
         <style>
-            
+            #home{
+                position: absolute;
+                bottom: 90%;
+                left: 1%;
+            }
 
             #info {
                 position: absolute;
@@ -14,10 +18,15 @@
                 color: white;
                 font-size: 10pt;
             }
+
+            #invert{
+                filter:invert(100%);
+            }
         </style>
     </head>
     <link rel="stylesheet" type="text/css" href="game_2048.css">
     <body>
+        <div id="home"><a href="./index.html"><img id="invert" src="./home-button.png" alt="" width="50px"></a></div>
         <table id="titleBar" border=0>
             <tr>
                 <td id="titlePad">
